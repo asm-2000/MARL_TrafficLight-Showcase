@@ -8,7 +8,7 @@ import Observation from "./Components/Observation/Observation";
 import Snaps from "./Components/Snaps/Snaps";
 import References from "./Components/References/References";
 import ExceptionHandler from "./Components/ExceptionHandler/ExceptionHandler";
-
+// App component
 const router = createBrowserRouter([
   {
     path: "/",
