@@ -1,0 +1,12 @@
+.App
+{
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  font-family:'Poppins', sans-serif;
+}
+
+
+
+

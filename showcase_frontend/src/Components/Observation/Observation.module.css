@@ -1,0 +1,10 @@
+.Div1
+{
+  background-image: linear-gradient(to bottom right, rgb(152, 151, 151),rgb(255, 255, 255));;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+}

@@ -1,0 +1,41 @@
+.Div1
+{
+  background-image: linear-gradient(to bottom right, rgb(236, 236, 236),rgb(255, 255, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.Div1_1
+{
+  width: 85%;
+  padding-inline: 20px 20px;
+  color: rgb(68, 68, 68);
+  text-align: justify;
+}
+.Div1_a
+{
+  display: flex;
+  flex-direction: row;
+}
+.Div1_1_1
+{
+  width: 52%;
+}
+.Div1_1_2
+{
+  width: 48%;
+  display: flex;
+}
+.traffic_jam
+{
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  margin-left: 30px;
+}
