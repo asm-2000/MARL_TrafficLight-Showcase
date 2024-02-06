@@ -25,6 +25,7 @@ function Navbar()
               <Link to="/Observation" className={styles.nav_links}>Observation</Link>
               <Link to="/Snaps" className={styles.nav_links}>Snapshots</Link>
               <Link to="/References" className={styles.nav_links}>References</Link>
+              <Link to ='/Extras' className={styles.nav_links}>Extras</Link>
 
             </div>
           </div>

@@ -1,0 +1,13 @@
+.Div1
+{
+  background-image: linear-gradient(to bottom right, rgb(236, 236, 236),rgb(255, 255, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
