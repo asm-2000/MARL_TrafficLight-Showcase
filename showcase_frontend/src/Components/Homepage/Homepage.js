@@ -3,7 +3,6 @@ import styles from "./Homepage.module.css";
 import { Fragment } from "react";
 
 function Homepage() {
-    
   return (
     <Fragment>
       <div className={styles.Div1}>
@@ -34,6 +33,15 @@ function Homepage() {
               of Q-learning (Reinforcement Learning) and demonstrates the
               overall improvement in the 'Jam Length', 'Waiting Time' and other
               relevant factors relating to the urban traffic flow.
+              <br />
+              <a
+                href="https://github.com/bikaldev/MARL-TrafficLight.git"
+                style={{ color: "orange",textDecoration:"none" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Link to GitHub repository
+              </a>
             </p>
           </div>
         </div>

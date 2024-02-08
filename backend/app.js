@@ -13,7 +13,7 @@ mongoose.connect("mongodb://0.0.0.0/MARL").then(() => {
 
 app.use(morgan("dev"));
 app.use(cors());
-
+app.use(express.json());
 app.use("/suggestion", suggestionRoute);
 
 app.use(bodyparser.urlencoded({ extended: false }));

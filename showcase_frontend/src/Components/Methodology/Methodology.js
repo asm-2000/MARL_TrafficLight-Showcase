@@ -51,39 +51,39 @@ function Methodology() {
             network configuration. To tackle this issue, decentralized policies
             considering the network structure need to be employed. Following are
             the steps to be followed:
-            <ul>
-              <li>
-                In the first step, we will be using the SUMO traffic simulator
-                for the generation of traffic, Road Network Design,
-                Infrastructure Design, Route Assignment, traffic signals, and
-                other related tasks.
-              </li>
-              <br />
-              <li>
-                {" "}
-                In the second step, we will be implementing Independent
-                Advantage Actor-Critic (IA2C) algorithm and training the Neural
-                Network Model. The traffic signal switching is determined by
-                observing the flow of nearby vehicles.
-              </li>
-              <br />
-              <li>
-                Inthethird step, we will be implementing Multi-Agent Advantage
-                Actor-Critic (MA2C) algorithm and training the Neural Network
-                Model. Here the traffic signal switching is also determined by
-                observing the flow of nearby vehicles but the difference is that
-                it also interacts with neighboring agents.
-              </li>
-              <br />
-              <li>
-                {" "}
-                In the fourth step, we apply the rerouting technique on both
-                algorithms and improve the flow of traffic more effectively
-              </li>
-              <br />
-              The detailed algorithms are as folows:
-            </ul>
           </p>
+          <ul>
+            <li>
+              In the first step, we will be using the SUMO traffic simulator for
+              the generation of traffic, Road Network Design, Infrastructure
+              Design, Route Assignment, traffic signals, and other related
+              tasks.
+            </li>
+            <br />
+            <li>
+              {" "}
+              In the second step, we will be implementing Independent Advantage
+              Actor-Critic (IA2C) algorithm and training the Neural Network
+              Model. The traffic signal switching is determined by observing the
+              flow of nearby vehicles.
+            </li>
+            <br />
+            <li>
+              Inthethird step, we will be implementing Multi-Agent Advantage
+              Actor-Critic (MA2C) algorithm and training the Neural Network
+              Model. Here the traffic signal switching is also determined by
+              observing the flow of nearby vehicles but the difference is that
+              it also interacts with neighboring agents.
+            </li>
+            <br />
+            <li>
+              {" "}
+              In the fourth step, we apply the rerouting technique on both
+              algorithms and improve the flow of traffic more effectively
+            </li>
+            <br />
+            The detailed algorithms are as folows:
+          </ul>
           <div className={styles.algos}>
             <img src={algo1} alt="algo1" className={styles.algoimg} />
             <img src={algo2} alt="algo2" className={styles.algoimg} />

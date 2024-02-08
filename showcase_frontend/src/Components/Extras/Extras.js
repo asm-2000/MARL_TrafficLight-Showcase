@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Extras.module.css";
 import { useState } from "react";
+import axios from "axios";
 
 function Extras() {
   const [name, setName] = useState("");
@@ -16,32 +17,29 @@ function Extras() {
   function messageChangeHandler(event) {
     setSuggestion(event.target.value);
   }
-  function formSubmitHandler(event) {
+  async function postData(formData) {
+    try {
+
+      const response = await axios.post("http://localhost:8000/suggestion/postData", formData)
+      if (response.status < 500) {
+        setpostResult("Feedback submitted successfully !");
+        setTimeout(()=>{
+          setpostResult("");
+        },3000)
+      } else setpostResult("Error submitting feedback !");
+    } catch (e) {
+      setpostResult("Error submitting feedback !");
+    }
+  }
+  async function  formSubmitHandler(event) {
     event.preventDefault();
     const formData = {
       name: name,
       email: email,
       suggestion: suggestion,
     };
-    function postData() {
-      try {
-        const response = fetch("http://localhost:8000/suggestion", {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-        if (response.status < 500) {
-          setpostResult("Feedback submitted successfully !");
-        } else setpostResult("Error submitting feedback !");
-      } catch (e) {
-        setpostResult("Error submitting feedback !");
-        console.log(e);
-      }
-    }
-    postData();
+
+    await postData(formData);
   }
   return (
     <div className={styles.Div1}>
@@ -54,6 +52,7 @@ function Extras() {
           <input
             type="text"
             name="name"
+            id="name"
             placeholder="Your Name"
             className={styles.text_input}
             value={name}
@@ -67,6 +66,7 @@ function Extras() {
           <input
             type="email"
             name="email"
+            id="email"
             placeholder="Your Email"
             className={styles.text_input}
             value={email}
@@ -79,7 +79,7 @@ function Extras() {
           </label>
           <textarea
             name="message_box"
-            id="mesage_box"
+            id="message_box"
             className={styles.message_box}
             value={suggestion}
             placeholder="Your message"

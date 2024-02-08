@@ -15,8 +15,8 @@ function References() {
     <Fragment>
       <div className={styles.Div1}>
         <div className={styles.Div1_1}>
-          {reference_list.map((reference) => (
-            <><p>{reference}</p><br /></>
+          {reference_list.map((reference,index) => (
+            <><p key={index}>{reference}</p><br /></>
           ))}
 
         </div>
