@@ -16,7 +16,7 @@ function Observation() {
           This section presents the results obtained after implementing the
           Multi Agent Reinforcement Learning system to train a Q-Network such
           that it dispatched correct joint actions i.e., desision to whether
-          chnage the current TLS phase at a specific node or to leave it be for
+          change the current TLS phase at a specific node or to leave it be for
           optimal traffic management. The target was to train the model to so as
           to dynamically and optimally manipulatinbg the TLS state to minimize
           the "Jam Lengths" at all the edges for an optimal and unhindered
