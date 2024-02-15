@@ -5,9 +5,10 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+
   return (
     <Fragment>
-      <div className={styles.navbar_box1}>
+      <div className={styles.navbar_box1} id="Navbar">
         <div className={styles.navbar_box1_1}>
           <figure>
             <Link to="/">

@@ -1,10 +1,32 @@
 .Div1
 {
-  background-image: linear-gradient(to bottom right, rgb(152, 151, 151),rgb(255, 255, 255));;
+  background-image: linear-gradient(to bottom right, rgb(236, 236, 236),rgb(255, 255, 255));
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.Div1_1
+{
+  width: 85%;
+  padding-inline: 20px 20px;
+  color: rgb(68, 68, 68);
+  text-align: justify;
+}
+.obj_snaps
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+}
+.snaps
+{
+  height: 500px;
+  width: 47%;
 }
