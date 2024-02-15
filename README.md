@@ -1,16 +1,21 @@
-##Installing Dependencies##
+##Installing Dependencies
 
-###Run following commands in terminal (In MARL_TrafficLight-Showcase directory)###
+###Run following commands in terminal (In MARL_TrafficLight-Showcase directory)
 
-cd showcase_frontend
-npm install
-cd ..
-cd backend
-npm install
+####cd showcase_frontend
+####npm install
+####cd ..
+####cd backend
+####npm install
 
-##Snapshots##
+##Snapshots
+
 ![homepage](homepage.png)
+
 ![introduction](introduction.png)
+
 ![methodology](methodology.png)
+
 ![observation](observation.png)
+
 ![extras](extras.png)
