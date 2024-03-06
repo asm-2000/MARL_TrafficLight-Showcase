@@ -1,9 +1,11 @@
 .navbar_box1
 {
+  background-color: white;
    display: flex;
    flex-direction: row;
    align-items: center;
    position: sticky;
+   top: 0;
 }
 .navbar_box1_1
 {
